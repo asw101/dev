@@ -9,6 +9,8 @@ source scripts/03-python.sh
 source scripts/09-oh-my-zsh.sh
 source scripts/09-gh.sh
 source scripts/09-az.sh
+source scripts/09-lazygit.sh
+source scripts/09-k9s.sh
 source scripts/09-misc.sh
 
 # install vim-plug

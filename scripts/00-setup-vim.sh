@@ -6,5 +6,7 @@ source scripts/09-vim.sh
 source scripts/09-vim-slime.sh
 source scripts/09-oh-my-zsh.sh
 source scripts/09-az.sh
+source scripts/09-lazygit.sh
+source scripts/09-k9s.sh
 source scripts/09-misc.sh
 
