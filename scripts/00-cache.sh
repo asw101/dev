@@ -17,7 +17,7 @@ apt-get install -y \
 	software-properties-common
 
 # neovim unstable
-add-apt-repository ppa:neovim-ppa/unstable
+add-apt-repository --yes ppa:neovim-ppa/unstable
 apt-get update
 apt-get install -y \
 	neovim
