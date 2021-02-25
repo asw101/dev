@@ -30,6 +30,6 @@ write_files:
 runcmd:
 - cd '/home/ubuntu/'
 - $( cat env.json | jq -r 'keys[] as $k | "export \($k)=\(.[$k])"' )
-- curl -L -o cloud-init.sh 'https://raw.githubusercontent.com/asw101/dev/scripts/cloud-init/cloud-init.sh'
+- curl -L -o cloud-init.sh 'https://raw.githubusercontent.com/asw101/dev/main/scripts/cloud-init/cloud-init.sh'
 - bash cloud-init.sh
 
