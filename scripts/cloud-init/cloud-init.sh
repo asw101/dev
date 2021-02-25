@@ -3,6 +3,8 @@ set -euo pipefail
 
 export DEBIAN_FRONTEND=noninteractive
 
-[[ -z "${HELLO:-}" ]] && HELLO='...'
-echo "HELLO: ${HELLO}" | tee output.txt
+git clone https://github.com/asw101/dev
+cd dev/
+sudo bash scripts/00-setup-cloud-init.sh | tee output.txt
+sudo bash scripts/09-vm.sh | tee output.txt
 
