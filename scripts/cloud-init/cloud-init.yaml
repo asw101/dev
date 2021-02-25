@@ -21,11 +21,11 @@ write_files:
 #        "HELLO":"world",
 #        "GOODBYE:"world
 #    }
-#  path: /home/username/env.json
+#  path: /home/ubuntu/env.json
 
 - encoding: b64
   content: ewogICAgIkhFTExPIjoid29ybGQiLAogICAgIkdPT0RCWUU6IndvcmxkCn0K
-  path: /home/username/env.json
+  path: /home/ubuntu/env.json
 
 runcmd:
 - cd '/home/ubuntu/'
