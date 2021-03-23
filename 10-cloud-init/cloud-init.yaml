@@ -18,6 +18,6 @@ runcmd:
 - export HOME='/home/ubuntu'
 - export USER='ubuntu'
 - cd $HOME
-- curl -L -o cloud-init.sh 'https://raw.githubusercontent.com/asw101/dev/dev/10-cloud-init/cloud-init/cloud-init.sh'
+- curl -L -o cloud-init.sh 'https://raw.githubusercontent.com/asw101/dev/dev/10-cloud-init/cloud-init.sh'
 - bash cloud-init.sh | tee output.txt
 
