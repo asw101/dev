@@ -4,13 +4,13 @@ call plug#begin('~/.local/share/nvim/site/plugged')
 Plug 'neovim/nvim-lsp'
 Plug 'neovim/nvim-lspconfig'
 Plug 'nvim-lua/completion-nvim'
-Plug 'nvim-lua/diagnostic-nvim'
 Plug 'lifepillar/vim-gruvbox8'
+Plug 'jpalardy/vim-slime'
 call plug#end()
 
 lua << EOF
-require'nvim_lsp'.gopls.setup{}
-require'nvim_lsp'.rust_analyzer.setup{}
+require'lspconfig'.gopls.setup{}
+require'lspconfig'.rust_analyzer.setup{}
 EOF
 
 set completeopt-=preview
@@ -34,9 +34,8 @@ set completeopt=menuone,noinsert,noselect
 lua << EOF
 local on_attach_vim = function(client)
   require'completion'.on_attach(client)
-  require'diagnostic'.on_attach(client)
 end
-require'nvim_lsp'.gopls.setup{on_attach=on_attach_vim}
+require'lspconfig'.gopls.setup{on_attach=on_attach_vim}
 EOF
 
 let g:diagnostic_enable_virtual_text = 1
@@ -48,3 +47,7 @@ colorscheme gruvbox8_hard
 
 set list
 set listchars=eol:⏎,tab:␉·,trail:␠,nbsp:⎵
+
+let g:slime_target = "tmux"
+let g:slime_default_config = {"socket_name": "default", "target_pane": "{last}"}
+

@@ -1,5 +1,6 @@
-# moved from 00-cache-nvim.sh
-apt-get install -y \
+echo '# rustlang...'
+
+sudo apt-get install -y \
 	build-essential \
 	pkg-config \
 	libssl-dev
