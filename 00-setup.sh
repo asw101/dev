@@ -10,7 +10,7 @@ bash 03-python.sh
 bash 04-node.sh
 bash 09-az.sh
 bash 09-basic.sh
-bash 09-docker.sh
+# bash 09-docker.sh
 bash 09-gh.sh
 bash 09-k9s.sh
 bash 09-lazygit.sh
